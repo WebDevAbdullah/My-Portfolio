@@ -15,36 +15,54 @@ body {
   background-size: cover;
   height: calc(100vh - 56px);
 }
+
+// Start Projects Section
 .projects {
   padding: 40px 0;
-  // height: 100vh;
   background-color: #343a40;
-}
 
-.projects__card {
-  width: 48%;
-  background-color: #343a40;
+  &__card {
+    width: 48%;
+    background-color: #343a40;
+  }
+  &__card:nth-child(even) {
+    direction: rtl;
+    margin-left: auto;
+  }
+  &__img {
+    max-width: 100%;
+    height: 100%;
+  }
 }
-.projects__card:nth-child(even) {
-  direction: rtl;
-  margin-left: auto;
-}
-.projects__img {
-  max-width: 100%;
-  height: 100%;
-}
+// End Projects Section
 
+// Start Skills Section
 .skills {
   padding: 40px 0;
   background-color: #343a40;
+
+  &__icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  &__title {
+    display: inline-block;
+  }
 }
-.skills__icon {
-  font-size: 24px;
-  margin-right: 10px;
-  // display: inline-block;
-  // width: 100%;
-  // text-align: center;
+// End Skills Section
+
+// Start Qualifications Section
+.qualifications {
+  padding: 40px 0;
+
+  &__timeline-item {
+    width: 48%;
+  }
+  &__timeline-item:nth-child(odd) {
+    direction: rtl;
+  }
+  &__timeline-item:nth-child(even) {
+    margin-left: auto;
+  }
 }
-.skills__title {
-  display: inline-block;
-}
+// End Qualifications Section
