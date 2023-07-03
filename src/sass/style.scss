@@ -5,6 +5,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+// Start Global Styles
+section {
+  padding: 40px 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+// End Global Styles
 // * {
 //   outline: 1px solid red;
 // }
@@ -18,9 +29,6 @@ body {
 
 // Start Projects Section
 .projects {
-  padding: 40px 0;
-  background-color: #343a40;
-
   &__card {
     width: 48%;
     background-color: #343a40;
@@ -38,7 +46,6 @@ body {
 
 // Start Skills Section
 .skills {
-  padding: 40px 0;
   background-color: #343a40;
 
   &__icon {
@@ -53,8 +60,6 @@ body {
 
 // Start Qualifications Section
 .qualifications {
-  padding: 40px 0;
-
   &__timeline-item {
     width: 48%;
   }
@@ -66,3 +71,13 @@ body {
   }
 }
 // End Qualifications Section
+
+// Start Contact Section
+.footer {
+  &__social-media-list {
+    display: flex;
+    justify-content: center;
+    // margin-bottom: 20px;
+  }
+}
+// End Contact Section
